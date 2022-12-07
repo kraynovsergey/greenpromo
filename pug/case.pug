@@ -1,0 +1,457 @@
+doctype html
+html(lang="ru")
+    head
+        - var seo = {title: 'Кейс', description: 'Описание страницы кейсв', keywords: 'Ключи страницы кейса'}
+        include includes/_meta.pug
+    body
+        include includes/_header.pug
+
+        main.main._inner
+            section.section.intro._pt0._pb0
+                .container
+                    .intro__cols
+                        .intro__col._small
+                            picture
+                                source(type="image/webp" srcset="img/tmp/case-intro-logo@2x.webp 2x, img/tmp/case-intro-logo.webp 1x")
+                                source(type="image/png" srcset="img/tmp/case-intro-logo@2x.png 2x, img/tmp/case-intro-logo.png 1x")
+                                img.intro__logo(src="img/tmp/case-intro-logo.png 1x" alt="" width="320" height="88")
+                            h1.intro__h1._inner SEO продвижение сайта
+                            //button.btn.intro__btn._light-green(type="button") Хочу так же
+
+                        .intro__col._big
+                            picture
+                                source(type="image/webp" srcset="img/tmp/case-intro@2x.webp 2x, img/tmp/case-intro.webp 1x")
+                                source(type="image/png" srcset="img/tmp/case-intro@2x.png 2x, img/tmp/case-intro.png 1x")
+                                img.intro__img(src="img/tmp/case-intro.png 1x" alt="" width="772" height="552")
+
+            section.section.case-about._pb0
+                .container.case-about__container
+                    .case-about__wrap
+                        .section__head._left-tablet._mb0
+                            h2.section__title О компании
+                        .case-about__text
+                            p Стоматология Удивительных Цен — это сеть стоматологических клиник в Москве.
+                            p Миссия стоматологии — реально недорогая качественная стоматология. Работает клиника с 1997 года. Цены на услуги в 1,5-2 раза ниже средних по Москве. Врачи с большим практическим опытом, систематически повышают свою квалификацию.
+                            p Материалы и инструменты от официальных дистрибьютеров торговых марок.
+                            p Зуботехнических комплекс полного цикла.
+                        .case-about__title.case-about__gradient лето 2016 года
+                        .case-about__subtitle.case-about__gradient Начало работы
+
+            section.section.goal._pb0
+                .container
+                    .goal__wrap
+                        .section__head
+                            h2.section__title Цели клиента
+                            .arrows.section__head-arrows.goal__arrows
+                                button.arrows__item._prev(type="button")
+                                    svg(width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                        use(xlink:href="#arrow")
+                                button.arrows__item._next(type="button")
+                                    svg(width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                        use(xlink:href="#arrow")
+
+                        .goal__carousel
+                            .goal__slide
+                                .goal__item
+                                    .goal__icon
+                                        img(src="img/tmp/goal-1.svg" alt="" width="225" height="195")
+                                    .goal__title Увеличить
+                                    .goal__text охват поисковой видимости сайта
+                            .goal__slide
+                                .goal__item
+                                    .goal__icon
+                                        img(src="img/tmp/goal-2.svg" alt="" width="225" height="195")
+                                    .goal__title Известность
+                                    .goal__text повысить известность бренда
+                            .goal__slide
+                                .goal__item
+                                    .goal__icon
+                                        img(src="img/tmp/goal-3.svg" alt="" width="225" height="195")
+                                    .goal__title Повысить
+                                    .goal__text поисковой трафик на сайте
+                            .goal__slide
+                                .goal__item
+                                    .goal__icon
+                                        img(src="img/tmp/goal-4.svg" alt="" width="225" height="195")
+                                    .goal__title Конверсия
+                                    .goal__text увеличить конверсию
+
+            section.section.research._pb0
+                .container
+                    .section__head
+                        h2.section__title Предпроектные исследования
+                    .research__cols
+                        .research__item
+                            .research__icon
+                                img(src="img/tmp/research-1.svg" alt="" width="155" height="132")
+                            .research__title Анализ конкурентов
+                        .research__item
+                            .research__icon
+                                img(src="img/tmp/research-2.svg" alt="" width="155" height="132")
+                            .research__title Аудит сайта
+                        .research__item
+                            .research__icon
+                                img(src="img/tmp/research-3.svg" alt="" width="155" height="132")
+                            .research__title Анализ конверсии
+
+            section.section.complex._pb0
+                .container
+                    .section__head
+                        h2.section__title Комплексная работа нашей комнады
+                        .arrows.section__head-arrows.complex__arrows._desktop
+                            button.arrows__item._prev(type="button")
+                                svg(width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#arrow")
+                            button.arrows__item._next(type="button")
+                                svg(width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#arrow")
+
+                    .complex__carousel
+                        .complex__slide
+                            .complex__item
+                                ul.list.complex__list
+                                    li
+                                        span.list__circle
+                                        span.complex__content
+                                            span.complex__number 01
+                                            span.complex__title Составление ТЗ
+                                            span.complex__text по модернизации сайта -  устранение существующих недочетов в оптимизации, технической и контентной реализации сайта
+                                .complex__icon
+                                    img(src="img/tmp/complex-1.svg" alt="" width="415" height="265")
+
+                        .complex__slide
+                            .complex__item
+                                ul.list.complex__list
+                                    li
+                                        span.list__circle
+                                        span.complex__content
+                                            span.complex__number 02
+                                            span.complex__title Составление рекомендаций
+                                            span.complex__text по повышению удобства пользования ресурсом и повышению коммерческих факторов на сайте
+                                .complex__icon
+                                    img(src="img/tmp/complex-2.svg" alt="" width="415" height="265")
+
+                        .complex__slide
+                            .complex__item
+                                ul.list.complex__list
+                                    li
+                                        span.list__circle
+                                        span.complex__content
+                                            span.complex__number 03
+                                            span.complex__title Индексация
+                                            span.complex__text Обеспечение корректной индексации сайта и предотвращение индексации дублированного контент
+                                .complex__icon
+                                    img(src="img/tmp/complex-3.svg" alt="" width="415" height="265")
+
+                        .complex__slide
+                            .complex__item
+                                ul.list.complex__list
+                                    li
+                                        span.list__circle
+                                        span.complex__content
+                                            span.complex__number 04
+                                            span.complex__title Продвижение
+                                            span.complex__text сайта по общему семантическому ядру, состоящему из ключевых запросов коммерческой и информационной направленности
+                                .complex__icon
+                                    img(src="img/tmp/complex-4.svg" alt="" width="415" height="265")
+
+                        .complex__slide
+                            .complex__item
+                                ul.list.complex__list
+                                    li
+                                        span.list__circle
+                                        span.complex__content
+                                            span.complex__number 05
+                                            span.complex__title Оптимизация
+                                            span.complex__text Оптимизация метатегов и заголовков страниц сайта
+                                .complex__icon
+                                    img(src="img/tmp/complex-5.svg" alt="" width="415" height="265")
+
+                        .complex__slide
+                            .complex__item
+                                ul.list.complex__list
+                                    li
+                                        span.list__circle
+                                        span.complex__content
+                                            span.complex__number 06
+                                            span.complex__title Анализ
+                                            span.complex__text Анализ сайтов конкурентов в поисковой выдаче и использование полученных данных для внедрения на продвигаемом сайте
+                                .complex__icon
+                                    img(src="img/tmp/complex-6.svg" alt="" width="415" height="265")
+
+                        .complex__slide
+                            .complex__item
+                                ul.list.complex__list
+                                    li
+                                        span.list__circle
+                                        span.complex__content
+                                            span.complex__number 07
+                                            span.complex__title Уникальность
+                                            span.complex__text Повышение информативности и уникальности страниц сайта
+                                .complex__icon
+                                    img(src="img/tmp/complex-7.svg" alt="" width="415" height="265")
+
+                        .complex__slide
+                            .complex__item
+                                ul.list.complex__list
+                                    li
+                                        span.list__circle
+                                        span.complex__content
+                                            span.complex__number 08
+                                            span.complex__title Расширение структуры
+                                            span.complex__text Значительное расширение структуры сайта
+                                .complex__icon
+                                    img(src="img/tmp/complex-8.svg" alt="" width="415" height="265")
+
+                        .complex__slide
+                            .complex__item
+                                ul.list.complex__list
+                                    li
+                                        span.list__circle
+                                        span.complex__content
+                                            span.complex__number 09
+                                            span.complex__title Счетчики аналитики
+                                            span.complex__text Анализ данных вебмастеров и счетчиков аналитики для внедрения положительных изменений на сайте
+                                .complex__icon
+                                    img(src="img/tmp/complex-9.svg" alt="" width="415" height="265")
+
+                        .complex__slide
+                            .complex__item
+                                ul.list.complex__list
+                                    li
+                                        span.list__circle
+                                        span.complex__content
+                                            span.complex__number 10
+                                            span.complex__title Структура
+                                            span.complex__text Составление новой структуры посадочных страниц.
+                                .complex__icon
+                                    img(src="img/tmp/complex-10.svg" alt="" width="415" height="265")
+
+                    .complex__pagination
+                        //.dots.complex__dots
+                            button.dots__item(type="button")
+                            button.dots__item(type="button")
+                            button.dots__item(type="button")
+                            button.dots__item(type="button")
+                            button.dots__item(type="button")
+                            button.dots__item(type="button")
+                            button.dots__item(type="button")
+                            button.dots__item(type="button")
+                            button.dots__item(type="button")
+                            button.dots__item(type="button")
+
+                        .arrows.section__head-arrows.complex__arrows._mobile
+                            button.arrows__item._prev(type="button")
+                                svg(width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#arrow")
+                            button.arrows__item._next(type="button")
+                                svg(width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    use(xlink:href="#arrow")
+
+            section.section.traffic._pb0
+                .container
+                    .section__head
+                        h2.section__title Поисковой трафик
+
+                    .traffic__cols
+                        .traffic__col
+                            .traffic__block
+                                .traffic__title Лето 2016 г. (стартовые условия)
+                                .traffic__items
+                                    .traffic__item
+                                        .traffic__number._orange 150
+                                        .traffic__text визиты
+                                    .traffic__item
+                                        .traffic__number._orange 1,47
+                                        .traffic__text глубина просмотра
+                                    .traffic__item
+                                        .traffic__number._orange 27,8
+                                        .traffic__text отказы
+                            .traffic__block
+                                .traffic__title Через 6 месяцев
+                                .traffic__items
+                                    .traffic__item
+                                        .traffic__number._gradient 1 800
+                                        .traffic__text визиты
+                                    .traffic__item
+                                        .traffic__number._gradient 2.1
+                                        .traffic__text глубина просмотра
+                                    .traffic__item
+                                        .traffic__number._gradient 9.8
+                                        .traffic__text отказы
+                            .traffic__block
+                                .traffic__title Сейчас
+                                .traffic__items
+                                    .traffic__item
+                                        .traffic__number._green 41 869
+                                        .traffic__text визиты
+                                    .traffic__item
+                                        .traffic__number._green 2.58
+                                        .traffic__text глубина просмотра
+                                    .traffic__item
+                                        .traffic__number._green 7.86
+                                        .traffic__text отказы
+
+                        .traffic__col
+                            .graph
+                                .graph__cols._columns
+                                    .graph__lines
+                                        img(src="img/graph-line.svg" width="526" height="2")
+                                        img(src="img/graph-line.svg" width="526" height="2")
+                                        img(src="img/graph-line.svg" width="526" height="2")
+                                        img(src="img/graph-line.svg" width="526" height="2")
+                                        img(src="img/graph-line.svg" width="526" height="2")
+
+                                    .graph__col
+                                        .graph__blocks
+                                            .graph__block._orange(style="height: 15%;")
+                                                .graph__number 150
+                                                .graph__column
+
+                                            .graph__block._gradient(style="height: 28%;")
+                                                .graph__number 1800
+                                                .graph__column
+
+                                            .graph__block._green(style="height: 90%;")
+                                                .graph__number 41 869
+                                                .graph__column
+
+                                    .graph__col
+                                        .graph__blocks
+                                            .graph__block._orange(style="height: 17%;")
+                                                .graph__number 1.47
+                                                .graph__column
+
+                                            .graph__block._gradient(style="height: 28%;")
+                                                .graph__number 2.1
+                                                .graph__column
+
+                                            .graph__block._green(style="height: 35%;")
+                                                .graph__number 2.58
+                                                .graph__column
+
+                                    .graph__col
+                                        .graph__blocks
+                                            .graph__block._orange(style="height: 70%;")
+                                                .graph__number 27,8
+                                                .graph__column
+
+                                            .graph__block._gradient(style="height: 35%;")
+                                                .graph__number 9.8
+                                                .graph__column
+
+                                            .graph__block._green(style="height: 25%;")
+                                                .graph__number 7.86
+                                                .graph__column
+
+                                .graph__cols._intro
+                                    .graph__col.graph__intro визиты
+                                    .graph__col.graph__intro глубина просмотра
+                                    .graph__col.graph__intro отказы
+
+                                .graph__cols._labels
+                                    .graph__col.graph__label._orange лето 2016
+                                    .graph__col.graph__label._gradient зима 2016
+                                    .graph__col.graph__label._green сейчас
+
+            section.section.progress._pb0
+                .container
+                    .progress__block
+                        .section__head
+                            h2.section__title Достижения
+
+                        .progress__cols
+                            .progress__item._small
+                                .progress__number 100x
+                                    sup в год!
+                                .progress__text Рост поискового трафика в сотни раз каждый год
+                            .progress__item._small
+                                .progress__number 20 340
+                                .progress__text ключевых запрос в продвижение
+                            .progress__item._small
+                                .progress__number 2x
+                                .progress__text повышение глубины посещения сайта
+                            .progress__item._small
+                                .progress__number 10x
+                                    sup в год!
+                                .progress__text Увеличение продвигаемого семантического ядра
+                            .progress__item._big
+                                .progress__icon
+                                    img.progress__img(src="img/tmp/progress-1.svg" alt="" width="234" height="180")
+                                .progress__text Снижение уровня отказов на сайте
+                            .progress__item._big
+                                .progress__icon
+                                    .progress__number 1 500
+                                    img.progress__img(src="img/tmp/progress-2.svg" alt="" width="126" height="36")
+                                .progress__text количество запросов в топ-3 Яндекс
+                            .progress__item._big
+                                .progress__icon
+                                    .progress__number 1 350
+                                    img.progress__img(src="img/tmp/progress-3.svg" alt="" width="126" height="36")
+                                .progress__text количество запросов в топ-3 Гугл
+
+            section.section.metrika._pb0
+                .container
+                    .section__head
+                        h2.section__title Динамика из метрики
+                        .section__subtitle за пол года
+
+                    .metrika__block
+                        img.metrika__head(src="img/browser.svg" alt="" width="1080" height="60")
+                        picture
+                            source(type="image/webp" srcset="img/tmp/metrika-1@2x.webp 2x, img/tmp/metrika-1.webp 1x")
+                            source(type="image/jpeg" srcset="img/tmp/metrika-1@2x.jpg 2x, img/tmp/metrika-1.jpg 1x")
+                            img.metrika__img(src="img/tmp/metrika-1.jpg 1x" alt="" width="1080" height="400")
+
+                        img.metrika__bg._left(src="img/metrika-left.svg" alt="" width="473" height="230")
+                        img.metrika__bg._right(src="img/metrika-right.svg" alt="" width="165" height="210")
+
+            section.section.metrika._pb0
+                .container
+                    .section__head
+                        h2.section__title График видимости в поиске
+
+                    .metrika__block
+                        img.metrika__head(src="img/browser.svg" alt="" width="1080" height="60")
+                        picture
+                            source(type="image/webp" srcset="img/tmp/metrika-2@2x.webp 2x, img/tmp/metrika-2.webp 1x")
+                            source(type="image/jpeg" srcset="img/tmp/metrika-2@2x.jpg 2x, img/tmp/metrika-2.jpg 1x")
+                            img.metrika__img(src="img/tmp/metrika-2.jpg 1x" alt="" width="1080" height="225")
+
+            div.section.metrika._pb0
+                .container
+                    .metrika__subtitle детально 2016 - 2022
+
+                    .metrika__block
+                        img.metrika__head(src="img/browser.svg" alt="" width="1080" height="60")
+                        picture
+                            source(type="image/webp" srcset="img/tmp/metrika-3@2x.webp 2x, img/tmp/metrika-3.webp 1x")
+                            source(type="image/jpeg" srcset="img/tmp/metrika-3@2x.jpg 2x, img/tmp/metrika-3.jpg 1x")
+                            img.metrika__img(src="img/tmp/metrika-3.jpg 1x" alt="" width="1080" height="400")
+
+            section.section.reviews._pb0
+                .container
+                    .section__head
+                        h2.section__title Благодарственное письмо
+
+                    .reviews__item._letter
+                        a.reviews__img(href="img/tmp/reviews-2@2x.jpg" data-fancybox="reviews")
+                            picture
+                                source(type="image/webp" srcset="img/tmp/reviews-2@2x.webp 2x, img/tmp/reviews-2.webp 1x")
+                                source(type="image/jpeg" srcset="img/tmp/reviews-2@2x.jpg 2x, img/tmp/reviews-2.jpg 1x")
+                                img(src="img/tmp/reviews-2.jpg" alt="" width="212" height="292")
+                        .reviews__content
+                            .reviews__title Chudostom.ru
+                            .reviews__text «Москвоский Центр Дентальной имплантологии РУТТ » выражает Вам и всей комнаде Green Promo благодарность за качественную работу. В рамках плодотворного сотрудничества сайт клиники  www.dentalroot.ru смог выйти на топовые позиции в основных поисковых системах интернета. Особенно хочется отметить комфортную работу, быструю обратную связь, готовность откликаться и эффективно решать срочные и нестандартные задачи по продвижению. Желаем Вашей сплоченой команде творческих и коммерческих успехов
+
+            include includes/_feedback.pug
+
+            include includes/_articles.pug
+
+            include includes/_text.pug
+
+        include includes/_contacts.pug
+
+        include includes/_svg.pug
+
+        include includes/_scripts.pug

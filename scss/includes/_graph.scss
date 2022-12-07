@@ -1,0 +1,179 @@
+.graph {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	justify-content: flex-end;
+	padding: 0 20px;
+
+	@media (max-width: 991px) {
+		height: 500px;
+		max-width: 526px;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 767px) {
+		max-width: 100%;
+	}
+
+	&__cols {
+		margin: 0 -15px;
+		display: flex;
+		align-items: center;
+
+		&._labels {
+			margin-top: 40px;
+
+			@media (max-width: 991px) {
+				margin-top: 15px;
+			}
+		}
+
+		&._intro {
+			margin-top: 12px;
+		}
+
+		&._columns {
+			flex-grow: 1;
+			position: relative;
+		}
+	}
+
+	&__col {
+		padding: 0 15px;
+		width: 33.33%;
+		height: 100%;
+		position: relative;
+		z-index: 2;
+	}
+
+	&__label {
+		display: flex;
+		align-items: center;
+		color: #9BA9B7;
+		font-weight: 500;
+
+		&::before {
+			content: '';
+			min-width: 16px;
+			max-width: 16px;
+			border-radius: 50%;
+			height: 16px;
+			margin-right: 9px;
+		}
+
+		&._orange {
+			&::before {
+				background: linear-gradient(201.24deg, #FFC444 26.98%, #F36F56 115.62%);
+			}
+		}
+
+		&._gradient {
+			&::before {
+				background: linear-gradient(95.1deg, #F8DB8B -6.14%, #68B790 111.11%);
+			}
+		}
+
+		&._green {
+			color: $color_green;
+
+			&::before {
+				background: linear-gradient(157.58deg, #067431 0.89%, #2E9F5A 95.66%);
+			}
+		}
+	}
+
+	&__intro {
+		font-size: .87rem;
+	}
+
+	&__blocks {
+		display: flex;
+		height: 100%;
+		align-items: flex-end;
+		margin: 0 -10px;
+		width: 100%;
+
+		@media (max-width: 575px) {
+			width: auto;
+			margin: 0 -8px;
+		}
+	}
+
+	&__block {
+		width: calc(33.33% - 20px);
+		margin: 0 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media (max-width: 575px) {
+			margin: 0 8px;
+			width: calc(33.33% - 16px);
+		}
+
+		&._orange {
+			& .graph__number {
+				font-size: .87rem;
+				font-weight: normal;
+			}
+
+			& .graph__column {
+				background: linear-gradient(201.24deg, #FFC444 26.98%, #F36F56 115.62%);
+			}
+		}
+
+		&._gradient {
+			& .graph__number {
+				background: linear-gradient(95.1deg, #F8DB8B -6.14%, #68B790 111.11%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				text-fill-color: transparent;
+			}
+
+			& .graph__column {
+				background: linear-gradient(95.1deg, #F8DB8B -6.14%, #68B790 111.11%);
+			}
+		}
+
+		&._green {
+			& .graph__number {
+				color: $color_green;
+			}
+
+			& .graph__column {
+				background: linear-gradient(157.58deg, #067431 0.89%, #2E9F5A 95.66%);
+			}
+		}
+	}
+
+	&__column {
+		flex-grow: 1;
+		width: 100%;
+		border-radius: 5px;
+		margin-top: 10px;
+	}
+
+	&__number {
+		white-space: nowrap;
+		font-weight: bold;
+	}
+
+	&__lines {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 100px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		z-index: 1;
+		overflow: hidden;
+
+		& img {
+			height: auto;
+		}
+	}
+}

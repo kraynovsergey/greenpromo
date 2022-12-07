@@ -1,0 +1,37 @@
+section.section.feedback._pb0
+    .container
+        .section__head
+            h2.section__title Свяжитесь с нами
+
+        .feedback__cols
+            img.feedback__img(src="img/feedback.svg" alt="" width="479" height="371")
+
+            .feedback__content
+                form.form(action="#" method="post")
+                    .form__cols
+                        fieldset.form__fieldset.form__col
+                            label.form__label Ваше Имя
+                            input.form__input(type="text" name="name" placeholder="Ваше Имя")
+
+                        fieldset.form__fieldset.form__col
+                            label.form__label Ваш номер телефона
+                            input.form__input(type="tel" name="phone" placeholder="+7")
+
+                        fieldset.form__fieldset.form__col
+                            label.form__label Адрес электронной почты
+                            input.form__input(type="email" name="email" placeholder="email@example.com")
+
+                        fieldset.form__fieldset.form__col
+                            label.form__label Адрес вашего сайта
+                            input.form__input(type="text" name="website" placeholder="www.example.com")
+
+                    fieldset.form__fieldset._last
+                        label.form__label Короткое сообщение
+                        textarea.form__textarea(type="text" name="message" placeholder="Ваше сообщение")
+
+                    .form__policy Нажимая на кнопку, Вы соглашаетесь с <a href="#" target="_blank">условиями передачи данных</a>
+
+                    button.btn.form__btn._gradient(type="submit") Отправить
+
+
+

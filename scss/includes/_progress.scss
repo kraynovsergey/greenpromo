@@ -1,0 +1,119 @@
+.progress {
+	@media (max-width: 575px) {
+		overflow: hidden;
+	}
+
+	&__block {
+		padding: 58px 48px 100px;
+		background: #f9f9f9;
+		border-radius: 20px;
+		overflow: hidden;
+
+		@media (max-width: 767px) {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+
+		@media (max-width: 575px) {
+			padding-left: 16px;
+			padding-right: 16px;
+			margin-left: -16px;
+			margin-right: -16px;
+			overflow: visible;
+			border-radius: 0;
+		}
+	}
+
+	&__cols {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -24px -56px;
+		justify-content: center;
+
+		@media (max-width: 767px) {
+			flex-wrap: nowrap;
+			overflow-x: auto;
+			margin: 0;
+			justify-content: flex-start;
+
+			&::-webkit-scrollbar {
+				width: 0 !important;
+				height: 0 !important;
+			}
+		}
+	}
+
+	&__item {
+		margin: 0 24px 56px;
+		background: $color_white;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		padding: 50px 30px;
+
+		@media (max-width: 1199px) {
+			width: calc(50% - 48px) !important;
+		}
+
+		@media (max-width: 767px) {
+			margin: 0 20px 0 0;
+			min-width: 263px;
+			max-width: 263px;
+			width: 263px;
+		}
+
+		&._small {
+			width: calc(25% - 48px);
+		}
+
+		&._big {
+			width: calc(33.33% - 48px);
+
+			& .progress__number {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	&__number {
+		font-size: 3.25rem;
+		font-weight: bold;
+		color: $color_green;
+		line-height: 100%;
+
+		& sup {
+			font-size: .87rem;
+			color: #fff;
+			font-weight: 500;
+			background: #087534;
+			padding: 3px 10px;
+			border-radius: 10px;
+			margin-left: 7px;
+			position: relative;
+			top: -80%;
+			white-space: nowrap;
+		}
+	}
+
+	&__text {
+		margin-top: 20px;
+	}
+
+	&__icon {
+		height: 193px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		@media (max-width: 767px) {
+			height: 100px;
+		}
+
+		& img {
+			max-height: 90%;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}

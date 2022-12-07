@@ -1,0 +1,380 @@
+doctype html
+html(lang="ru")
+	head
+		- var seo = {title: 'Главная страница', description: 'Описание главной страницы', keywords: 'Ключи главной страницы'}
+		include includes/_meta.pug
+	body
+		include includes/_header.pug
+
+		main.main
+			section.section.intro._pt0._pb0
+				.container
+					.intro__cols
+						.intro__col
+							h1.intro__h1 Комплексное продвижение стоматологической клиники
+							.intro__subtitle Нужна первичка?
+							button.btn.intro__btn._light-green._hidden-mobile(type="button") Нужна
+
+						.intro__col
+							img.intro__img(src="img/home-intro.svg" alt="" width="461" height="418")
+							button.btn.intro__btn._light-green._visible-mobile(type="button") Нужна
+
+			section.section.clients._pb0
+				.container
+					.section__head
+						h2.section__title Наши клиенты
+						.arrows.section__head-arrows.clients__arrows
+							button.arrows__item._prev(type="button")
+								svg(width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+									use(xlink:href="#arrow")
+							button.arrows__item._next(type="button")
+								svg(width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+									use(xlink:href="#arrow")
+
+					.clients__carousel
+						.clients__slide
+							.clients__item
+								picture
+									source(type="image/webp" srcset="img/tmp/clients-1@2x.webp 2x, img/tmp/clients-1.webp 1x")
+									source(type="image/png" srcset="img/tmp/clients-1@2x.png 2x, img/tmp/clients-1.png 1x")
+									img.clients__img(src="img/tmp/clients-1.png 1x" alt="" width="175" height="60")
+						.clients__slide
+							.clients__item
+								picture
+									source(type="image/webp" srcset="img/tmp/clients-2@2x.webp 2x, img/tmp/clients-2.webp 1x")
+									source(type="image/png" srcset="img/tmp/clients-2@2x.png 2x, img/tmp/clients-2.png 1x")
+									img.clients__img(src="img/tmp/clients-1.png 1x" alt="" width="175" height="60")
+						.clients__slide
+							.clients__item
+								picture
+									source(type="image/webp" srcset="img/tmp/clients-3@2x.webp 2x, img/tmp/clients-3.webp 1x")
+									source(type="image/png" srcset="img/tmp/clients-3@2x.png 2x, img/tmp/clients-3.png 1x")
+									img.clients__img(src="img/tmp/clients-2.png 1x" alt="" width="175" height="60")
+						.clients__slide
+							.clients__item
+								picture
+									source(type="image/webp" srcset="img/tmp/clients-4@2x.webp 2x, img/tmp/clients-4.webp 1x")
+									source(type="image/png" srcset="img/tmp/clients-4@2x.png 2x, img/tmp/clients-4.png 1x")
+									img.clients__img(src="img/tmp/clients-4.png 1x" alt="" width="175" height="60")
+						.clients__slide
+							.clients__item
+								picture
+									source(type="image/webp" srcset="img/tmp/clients-5@2x.webp 2x, img/tmp/clients-5.webp 1x")
+									source(type="image/png" srcset="img/tmp/clients-5@2x.png 2x, img/tmp/clients-5.png 1x")
+									img.clients__img(src="img/tmp/clients-5.png 1x" alt="" width="175" height="60")
+						.clients__slide
+							.clients__item
+								picture
+									source(type="image/webp" srcset="img/tmp/clients-6@2x.webp 2x, img/tmp/clients-6.webp 1x")
+									source(type="image/png" srcset="img/tmp/clients-6@2x.png 2x, img/tmp/clients-6.png 1x")
+									img.clients__img(src="img/tmp/clients-6.png 1x" alt="" width="175" height="60")
+						.clients__slide
+							.clients__item
+								picture
+									source(type="image/webp" srcset="img/tmp/clients-1@2x.webp 2x, img/tmp/clients-1.webp 1x")
+									source(type="image/png" srcset="img/tmp/clients-1@2x.png 2x, img/tmp/clients-1.png 1x")
+									img.clients__img(src="img/tmp/clients-1.png 1x" alt="" width="175" height="60")
+						.clients__slide
+							.clients__item
+								picture
+									source(type="image/webp" srcset="img/tmp/clients-2@2x.webp 2x, img/tmp/clients-2.webp 1x")
+									source(type="image/png" srcset="img/tmp/clients-2@2x.png 2x, img/tmp/clients-2.png 1x")
+									img.clients__img(src="img/tmp/clients-1.png 1x" alt="" width="175" height="60")
+						.clients__slide
+							.clients__item
+								picture
+									source(type="image/webp" srcset="img/tmp/clients-3@2x.webp 2x, img/tmp/clients-3.webp 1x")
+									source(type="image/png" srcset="img/tmp/clients-3@2x.png 2x, img/tmp/clients-3.png 1x")
+									img.clients__img(src="img/tmp/clients-2.png 1x" alt="" width="175" height="60")
+						.clients__slide
+							.clients__item
+								picture
+									source(type="image/webp" srcset="img/tmp/clients-4@2x.webp 2x, img/tmp/clients-4.webp 1x")
+									source(type="image/png" srcset="img/tmp/clients-4@2x.png 2x, img/tmp/clients-4.png 1x")
+									img.clients__img(src="img/tmp/clients-4.png 1x" alt="" width="175" height="60")
+						.clients__slide
+							.clients__item
+								picture
+									source(type="image/webp" srcset="img/tmp/clients-5@2x.webp 2x, img/tmp/clients-5.webp 1x")
+									source(type="image/png" srcset="img/tmp/clients-5@2x.png 2x, img/tmp/clients-5.png 1x")
+									img.clients__img(src="img/tmp/clients-5.png 1x" alt="" width="175" height="60")
+						.clients__slide
+							.clients__item
+								picture
+									source(type="image/webp" srcset="img/tmp/clients-6@2x.webp 2x, img/tmp/clients-6.webp 1x")
+									source(type="image/png" srcset="img/tmp/clients-6@2x.png 2x, img/tmp/clients-6.png 1x")
+									img.clients__img(src="img/tmp/clients-6.png 1x" alt="" width="175" height="60")
+
+			section.section.about._pb0
+				.container
+					.section__head._left-tablet
+						h2.section__title О нас
+
+					.about__cols
+						ul.about__list.list
+							li
+								span.list__circle
+								span.list__content <strong>Нами реализовано более 65 проектов.</strong> Сегодня наша команда представлена 15 специалистами.
+							li
+								span.list__circle
+								span.list__content <strong>Основные направления нашей деятельности:</strong> веб-разработка, SEO, продвижение в социальных медиа.
+							li
+								span.list__circle
+								span.list__content <strong>Мы работаем с компаниями из России и по всему миру.</strong>
+
+						img.about__img(src="img/about.svg" alt="" width="747" height="452")
+
+						ul.about__list.list
+							li
+								span.list__circle
+								span.list__content <strong>Философия нашей команды</strong> основана на доверительных отношениях с клиентом
+							li
+								span.list__circle
+								span.list__content <strong>Сертифицированное агентство</strong>
+									.about__sertificates
+										picture.about__sertificate
+											source(type="image/webp" srcset="img/tmp/sertificate-1@2x.webp 2x, img/tmp/sertificate-1.webp 1x")
+											source(type="image/png" srcset="img/tmp/sertificate-1@2x.png 2x, img/tmp/sertificate-1.png 1x")
+											img(src="img/tmp/sertificate-1.png 1x" alt="" width="108" height="118")
+										picture.about__sertificate
+											source(type="image/webp" srcset="img/tmp/sertificate-2@2x.webp 2x, img/tmp/sertificate-2.webp 1x")
+											source(type="image/png" srcset="img/tmp/sertificate-2@2x.png 2x, img/tmp/sertificate-2.png 1x")
+											img(src="img/tmp/sertificate-2.png 1x" alt="" width="108" height="118")
+
+			.section.case._pb0
+				.container
+					.case__box
+						.case__browser
+							img.case__browser-head(src="img/browser.svg" alt="" width="901" height="54")
+							picture.case__browser-img
+								source(type="image/webp" srcset="img/tmp/case-browser@2x.webp 2x, img/tmp/case-browser.webp 1x")
+								source(type="image/jpeg" srcset="img/tmp/case-browser@2x.jpg 2x, img/tmp/case-browser.jpg 1x")
+								img(src="img/tmp/case-browser.jpg" alt="" width="901" height="401")
+
+						.case__box-content
+							.case__box-title Используем глубокую аналитику для отслеживания эффективности рекламы
+							ul.case__box-list.list
+								li
+									span.list__circle
+									span Видим откуда пришел пациент и какая стоимость заявки
+								li
+									span.list__circle
+									span Подключаем колтрекинг
+
+			section.section.case._pb0
+				.container
+					.section__head._left-tablet
+						h2.section__title Кейсы
+						.arrows.section__head-arrows.case__arrows._mobile
+							button.arrows__item._prev(type="button")
+								svg(width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+									use(xlink:href="#arrow")
+							button.arrows__item._next(type="button")
+								svg(width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+									use(xlink:href="#arrow")
+
+					.case__carousel-wrap
+						.case__carousel
+							.case__slide
+								.case__item
+									.case__content
+										.case__title SimplaDent
+										.case__block
+											.case__block-title Услуга:
+											.case__block-text <strong>Seo</strong> продвижение сайта
+
+										.case__block
+											.case__block-title Результаты:
+											.case__results
+												.case__result
+													.case__number 100x
+														sup в год!
+													.case__number-text Увеличение трафика
+												.case__result
+													.case__number 35 480
+													.case__number-text ключевых запросов в продвижение
+												.case__result
+													.case__number 2x
+													.case__number-text повышение глубины посещения сайта
+
+										a.btn.case__btn._green(href="#") Подробнее
+
+									picture.case__img
+										source(type="image/webp" srcset="img/tmp/case-1@2x.webp 2x, img/tmp/case-1.webp 1x")
+										source(type="image/png" srcset="img/tmp/case-1@2x.png 2x, img/tmp/case-1.png 1x")
+										img(src="img/tmp/case-1.png" alt="" width="711" height="520")
+
+							.case__slide
+								.case__item
+									.case__content
+										.case__title Chudostom.ru
+										.case__block
+											.case__block-title Услуга:
+											.case__block-text Seo продвижение сайта
+
+										.case__block
+											.case__block-title Результаты:
+											.case__results
+												.case__result
+													.case__number + 170%
+													.case__number-text Увеличение трафика
+												.case__result
+													.case__number в 2 раза
+													.case__number-text снижение отказов
+												.case__result
+													.case__number в 3 раза
+													.case__number-text увеличение количества лидов
+
+										a.btn.case__btn._green(href="#") Подробнее
+
+									picture.case__img
+										source(type="image/webp" srcset="img/tmp/case-2@2x.webp 2x, img/tmp/case-2.webp 1x")
+										source(type="image/png" srcset="img/tmp/case-2@2x.png 2x, img/tmp/case-2.png 1x")
+										img(src="img/tmp/case-2.png" alt="" width="711" height="520")
+
+						.arrows.case__arrows._desktop
+							button.arrows__item._prev(type="button")
+								svg(width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+									use(xlink:href="#arrow")
+							button.arrows__item._next(type="button")
+								svg(width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+									use(xlink:href="#arrow")
+
+			section.section.services._pb0
+				.container
+					.section__head
+						h2.section__title Услуги для клиник
+
+					.services__cols
+						.services__item
+							img.services__img(src="img/tmp/services-1.svg" alt="" img="206" height="172")
+							.services__title Разработка продающего сайта/лендинга
+
+						.services__item
+							img.services__img(src="img/tmp/services-2.svg" alt="" img="162" height="165")
+							.services__title SEO продвижение сайта
+							.services__text Самый эффективный и не дорогой источник первичных пациентов
+
+						.services__item
+							picture
+								source(type="image/webp" srcset="img/tmp/services-3@2x.webp 2x, img/tmp/services-3.webp 1x")
+								source(type="image/png" srcset="img/tmp/services-3@2x.png 2x, img/tmp/services-3.png 1x")
+								img.services__img(src="img/tmp/services-3.jpg" alt="" width="177" height="136")
+							.services__title Контекстная реклама в Яндекс директ и Google Ads
+
+						.services__item
+							img.services__img(src="img/tmp/services-4.svg" alt="" img="191" height="151")
+							.services__title Таргетированная реклама в Вконтакте и Телеграме
+
+						.services__item
+							img.services__img(src="img/tmp/services-5.svg" alt="" img="232" height="149")
+							.services__title Регистрация клиники в справочниках и картах
+
+						.services__item
+							img.services__img(src="img/tmp/services-6.svg" alt="" img="159" height="148")
+							.services__title Фото и видеосъемка
+
+			section.section.why-we._pb0
+				.container
+					.section__head
+						h2.section__title Почему нужно работать с нами?
+
+					.why-we__cols
+						.why-we__item
+							.why-we__icon
+								img(src="img/tmp/why-we-1.svg" alt="" width="115" height="99")
+							.why-we__title Хорошо знаем стоматологическую тематику
+						.why-we__item
+							.why-we__icon
+								img(src="img/tmp/why-we-2.svg" alt="" width="140" height="117")
+							.why-we__title Работаем с крупными брендами
+						.why-we__item
+							.why-we__icon
+								img(src="img/tmp/why-we-3.svg" alt="" width="107" height="94")
+							.why-we__title Честные условия сотрудничества
+						.why-we__item
+							.why-we__icon
+								img(src="img/tmp/why-we-4.svg" alt="" width="119" height="92")
+							.why-we__title Комплексно продвигаем сайт
+						.why-we__item
+							.why-we__icon
+								img(src="img/tmp/why-we-5.svg" alt="" width="117" height="96")
+							.why-we__title Не меняем менеджеров на проекте
+						.why-we__item
+							.why-we__icon
+								img(src="img/tmp/why-we-6.svg" alt="" width="110" height="101")
+							.why-we__title Отличная репутация
+						.why-we__item
+							.why-we__icon
+								img(src="img/tmp/why-we-7.svg" alt="" width="178" height="77")
+							.why-we__title Работаем с 2009 года
+						.why-we__item
+							.why-we__icon
+								img(src="img/tmp/why-we-8.svg" alt="" width="113" height="92")
+							.why-we__title Большинство клиентов работает с нами более 5 лет
+
+			section.section.reviews._pb0
+				.container
+					.section__head._left-tablet
+						h2.section__title Отзывы клиник о нас
+						.arrows.section__head-arrows.reviews__arrows
+							button.arrows__item._prev(type="button")
+								svg(width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+									use(xlink:href="#arrow")
+							button.arrows__item._next(type="button")
+								svg(width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+									use(xlink:href="#arrow")
+
+					.reviews__carousel
+						.reviews__slide
+							.reviews__item
+								a.reviews__img(href="img/tmp/reviews-1@2x.jpg" data-fancybox="reviews")
+									picture
+										source(type="image/webp" srcset="img/tmp/reviews-1@2x.webp 2x, img/tmp/reviews-1.webp 1x")
+										source(type="image/jpeg" srcset="img/tmp/reviews-1@2x.jpg 2x, img/tmp/reviews-1.jpg 1x")
+										img(src="img/tmp/reviews-1.jpg" alt="" width="212" height="292")
+								.reviews__content
+									.reviews__title SIMPLADENTAL
+									.reviews__text OOO «Международный Центр Дентальной Стоматологии Симладент» благодарит ха эффективную работу коллектив агентства Green Promo В рамках сотрудничества в 20016 году были поставлены серъезные задачи, которые реализованы на высоком проффесиональном уровне. Резултаты - значительное увеличение поискового трафика, что особенно показательно для такой высококонкурентной отрасли, как стомматологические услуги. Поздравляем комнаду Green Promo с наступающими праздниками, и надеемся дальнейшее взаимовыгодное сотрудничество
+						.reviews__slide
+							.reviews__item
+								a.reviews__img(href="img/tmp/reviews-2@2x.jpg" data-fancybox="reviews")
+									picture
+										source(type="image/webp" srcset="img/tmp/reviews-2@2x.webp 2x, img/tmp/reviews-2.webp 1x")
+										source(type="image/jpeg" srcset="img/tmp/reviews-2@2x.jpg 2x, img/tmp/reviews-2.jpg 1x")
+										img(src="img/tmp/reviews-2.jpg" alt="" width="212" height="292")
+								.reviews__content
+									.reviews__title ROOTT
+									.reviews__text «Москвоский Центр Дентальной имплантологии РУТТ » выражает Вам и всей комнаде Green Promo благодарность за качественную работу. В рамках плодотворного сотрудничества сайт клиники  www.dentalroot.ru смог выйти на топовые позиции в основных поисковых системах интернета. Особенно хочется отметить комфортную работу, быструю обратную связь, готовность откликаться и эффективно решать срочные и нестандартные задачи по продвижению. Желаем Вашей сплоченой команде творческих и коммерческих успехов
+						.reviews__slide
+							.reviews__item
+								a.reviews__img(href="img/tmp/reviews-1@2x.jpg" data-fancybox="reviews")
+									picture
+										source(type="image/webp" srcset="img/tmp/reviews-1@2x.webp 2x, img/tmp/reviews-1.webp 1x")
+										source(type="image/jpeg" srcset="img/tmp/reviews-1@2x.jpg 2x, img/tmp/reviews-1.jpg 1x")
+										img(src="img/tmp/reviews-1.jpg" alt="" width="212" height="292")
+								.reviews__content
+									.reviews__title SIMPLADENTAL
+									.reviews__text OOO «Международный Центр Дентальной Стоматологии Симладент» благодарит ха эффективную работу коллектив агентства Green Promo В рамках сотрудничества в 20016 году были поставлены серъезные задачи, которые реализованы на высоком проффесиональном уровне. Резултаты - значительное увеличение поискового трафика, что особенно показательно для такой высококонкурентной отрасли, как стомматологические услуги. Поздравляем комнаду Green Promo с наступающими праздниками, и надеемся дальнейшее взаимовыгодное сотрудничество
+						.reviews__slide
+							.reviews__item
+								a.reviews__img(href="img/tmp/reviews-2@2x.jpg" data-fancybox="reviews")
+									picture
+										source(type="image/webp" srcset="img/tmp/reviews-2@2x.webp 2x, img/tmp/reviews-2.webp 1x")
+										source(type="image/jpeg" srcset="img/tmp/reviews-2@2x.jpg 2x, img/tmp/reviews-2.jpg 1x")
+										img(src="img/tmp/reviews-2.jpg" alt="" width="212" height="292")
+								.reviews__content
+									.reviews__title ROOTT
+									.reviews__text «Москвоский Центр Дентальной имплантологии РУТТ » выражает Вам и всей комнаде Green Promo благодарность за качественную работу. В рамках плодотворного сотрудничества сайт клиники  www.dentalroot.ru смог выйти на топовые позиции в основных поисковых системах интернета. Особенно хочется отметить комфортную работу, быструю обратную связь, готовность откликаться и эффективно решать срочные и нестандартные задачи по продвижению. Желаем Вашей сплоченой команде творческих и коммерческих успехов
+
+			include includes/_feedback.pug
+
+			include includes/_articles.pug
+
+			include includes/_text.pug
+
+		include includes/_contacts.pug
+
+		include includes/_svg.pug
+
+		include includes/_scripts.pug

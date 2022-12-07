@@ -1,0 +1,44 @@
+$color_black: #000000;
+$color_white: #ffffff;
+$color_gray: #B6B6B6;
+$color_darkGray: #737373;
+$color_lightGray: #E8E8E8;
+$color_green: #087534;
+$color_lightGreen: #61B538;
+
+$transition: 0.5s ease;
+
+@import "includes/reboot";
+@import "includes/grid";
+@import "includes/fonts";
+@import "includes/default";
+@import "includes/ui";
+
+@import "includes/header";
+@import "includes/main";
+@import "includes/section";
+@import "includes/intro";
+@import "includes/clients";
+@import "includes/about";
+@import "includes/case";
+@import "includes/services";
+@import "includes/why-we";
+@import "includes/reviews";
+@import "includes/feedback";
+@import "includes/form";
+@import "includes/articles";
+@import "includes/text";
+@import "includes/case-about";
+@import "includes/goal";
+@import "includes/research";
+@import "includes/complex";
+@import "includes/traffic";
+@import "includes/graph";
+@import "includes/progress";
+@import "includes/metrika";
+
+
+
+
+
+

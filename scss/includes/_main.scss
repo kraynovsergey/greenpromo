@@ -1,0 +1,15 @@
+.main {
+	padding-top: 200px;
+
+	&._inner {
+		padding-top: 140px;
+
+		@media (max-width: 991px) {
+			padding-top: 80px;
+		}
+	}
+
+	@media (max-width: 991px) {
+		padding-top: 95px;
+	}
+}

@@ -1,0 +1,51 @@
+.case-about {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__wrap {
+		max-width: 780px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	&__text {
+		margin: 15px 0 30px;
+
+		@media (max-width: 991px) {
+			margin-bottom: 40px;
+		}
+
+		& p {
+			margin: 0;
+		}
+	}
+
+	&__gradient {
+		background: linear-gradient(95.1deg, #F8DB8B -6.14%, #68B790 111.11%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+	}
+
+	&__title {
+		font-size: 2.62rem;
+		line-height: 110%;
+		font-weight: 600;
+		margin-bottom: 10px;
+
+		@media (max-width: 991px) {
+			font-size: 1.75rem;
+		}
+	}
+
+	&__subtitle {
+		font-size: 1.31rem;
+		font-weight: 500;
+	}
+}

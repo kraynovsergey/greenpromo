@@ -1,0 +1,34 @@
+.clients {
+	overflow: hidden;
+
+	&__carousel {
+		padding: 10px 0;
+	}
+
+	&__item {
+		height: 134px;
+		width: 208px;
+		padding: 15px;
+		background: $color_white;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	& .tns-ovh {
+		overflow: visible;
+	}
+
+	&__arrows {
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+}

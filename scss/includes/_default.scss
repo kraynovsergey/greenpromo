@@ -1,0 +1,85 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	background: $color_white;
+	font-family: 'Montserrat';
+	color: $color_black;
+	font-weight: normal;
+	font-style: normal;
+}
+
+body * {
+  outline: none !important;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+a,
+svg,
+path,
+rect,
+circle,
+button,
+span,
+::before,
+::after {
+	transition: $transition;
+}
+
+button {
+	border-radius: 0;
+	-webkit-appearance: none;
+	background: none;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	color: inherit;
+}
+
+a {
+	color: $color_green;
+	text-decoration: underline;
+
+	&:hover {
+		color: $color_green;
+		text-decoration: none;
+	}
+}
+
+.svg {
+	display: none;
+}
+
+._hidden-tablet {
+	@media (max-width: 991px) {
+		display: none !important;
+	}
+}
+
+._visible-tablet {
+	display: none !important;
+
+	@media (max-width: 991px) {
+		display: inline-block !important;
+	}
+}
+
+._hidden-mobile {
+	@media (max-width: 767px) {
+		display: none !important;
+	}
+}
+
+._visible-mobile {
+	display: none !important;
+
+	@media (max-width: 767px) {
+		display: inline-block !important;
+	}
+}

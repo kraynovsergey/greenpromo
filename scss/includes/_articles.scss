@@ -1,0 +1,47 @@
+.articles {
+	overflow: hidden;
+
+	& .tns-ovh {
+		@media (max-width: 767px) {
+			overflow: visible;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__img {
+		margin-bottom: 20px;
+
+		& img {
+			border-radius: 10px;
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__date {
+		display: flex;
+		align-items: center;
+		font-size: .87rem;
+		color: $color_lightGreen;
+		font-weight: 500;
+		margin-bottom: 7px;
+
+		& svg {
+			margin-right: 6px;
+		}
+	}
+
+	&__title {
+		font-weight: 500;
+		color: $color_black;
+		text-decoration: none;
+
+		&:hover {
+			color: $color_lightGreen;
+		}
+	}
+}

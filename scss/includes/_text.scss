@@ -1,0 +1,29 @@
+.text {
+	overflow: hidden;
+	font-size: .87rem;
+
+	&__cols {
+		margin: 0 -35px;
+		display: flex;
+		align-items: flex-start;
+
+		@media (max-width: 767px) {
+			margin: 0;
+			flex-direction: column;
+		}
+	}
+
+	&__col {
+		padding: 0 35px;
+		width: 50%;
+
+		@media (max-width: 767px) {
+			padding: 0;
+			width: 100%;
+		}
+	}
+
+	& p {
+		margin: 0;
+	}
+}
